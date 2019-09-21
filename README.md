@@ -1,2 +1,2 @@
-# JavaDevelop
-Домашнее задания по Java
+# JavaDev
+Разработки на Java
