@@ -1,0 +1,64 @@
+package CreatClasses;
+
+public class Help {
+
+    void helpon(int what){
+        switch(what) {
+            case '1':
+                System.out.println("Инcтpyкция if:\n");
+                System.out.println("if(ycлoвиe) инструкция;");
+                System.out.println("else инструкция;");
+                break;
+            case '2':
+                System.out.println("Инcтpyкция switch:\n");
+                System.out.println("switch(выpaжeниe) {");
+                System.out.println("    case константа: ");
+                System.out.println("    последовательность инструкций");
+                System.out.println("    break");
+                System.out.println(" // .. .");
+                System.out.println("}");
+                break;
+            case '3':
+                System.out.println("Цикл for:\n");
+                System.out.print("for(инициaлизaция; условие; итерация}");
+                System.out.println(" инструкция;");
+                break;
+            case '4':
+                System.out.println("Цикл while:\n");
+                System.out.println("while(ycлoвиe) инструкция;");
+                break;
+            case '5':
+                System.out.println("Цикл do-while:\n");
+                System.out.println("do {");
+                System.out.println(" инструкция;");
+                System.out.println(") while (условие);");
+                break;
+            case '6':
+                System.out.println( "Инcтpyкция break: \n" );
+                System.out.println("break; или break метка;");
+                break;
+            case '7':
+                System.out.println("Инcтpyкция continue:\n") ;
+                System.out.println("continue; или continue метка; ");
+                break;
+        }
+
+    }
+
+    void showmenu(){
+        System.out.println("Справка:");
+        System.out.println(" 1. if");
+        System.out.println(" 2. switch");
+        System.out.println(" 3. while");
+        System.out.println(" 4. switch");
+        System.out.println(" 5. do-while");
+        System.out.println(" 6. break");
+        System.out.println(" 7. continue\n");
+        System.out.print(" Выберите: (q - выход): ");
+    }
+
+    boolean isvalid(char ch){
+        if (ch < '1' | ch > '7' & ch != 'q') return false;
+        else return true;
+    }
+}
